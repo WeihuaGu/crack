@@ -14,7 +14,7 @@ split -$3 $2
 
 for dic in `ls x*`
 do { 
-sudo sh zipcrack temp.zip $dic;
+sh zipcrack $1 $dic;
 STATUS=$?
     if [ $STATUS -ge 0 ]; then
         echo "passwd is :"$(echo $1)".pass"
