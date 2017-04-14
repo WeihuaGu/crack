@@ -1,0 +1,23 @@
+#!/bin/sh
+if [ $# -ne 2 ]
+then
+    echo "Usage $0 <zipfile> <wordlist>";
+    exit -1;
+fi
+
+cat $2 | while read pass
+do
+{
+    echo -ne "\rtrying \"$pass\" " 
+    yes | 7z t $1 -p$pass  >/dev/null 2>&1 
+    STATUS=$?
+    if [ $STATUS -eq 0 ]; then
+        echo -e "\nArchive password is: \"$pass\"" 
+        echo $pass>$(echo $1)".pass"
+        break
+	exit 0
+    fi
+}
+done
+exit -1
+

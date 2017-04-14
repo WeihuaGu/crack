@@ -1,0 +1,29 @@
+#!/bin/sh
+if [ $# != 3 ] ;then
+	echo "输入参数，第一个是zip,第二个是passdic,第三个是分割字典的行数"
+	exit -1;
+fi
+
+
+if [ -f "xaa" ]; then
+rm x*
+fi
+
+
+split -$3 $2
+
+for dic in `ls x*`
+do { 
+sudo sh zipcrack temp.zip $dic;
+STATUS=$?
+    if [ $STATUS -ge 0 ]; then
+        echo "passwd is :"$(echo $1)".pass"
+	break
+    fi
+}& 
+done ; wait; echo 'finish';
+echo "passwd is "$(cat $(echo $1)".pass")
+if [ -f "xaa" ]; then
+		rm x*
+fi
+
