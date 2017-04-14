@@ -1,0 +1,60 @@
+美国中文电视台,rtmp://media3.sinovision.net:1935/live/livestream
+香港電視,rtmp://live.hkstv.hk.lxdns.com/live/hks
+三立都会台 ,http://dlhls.cdn.zhanqi.tv/zqlive/121900_BHDgs.m3u8
+高清翡翠台,http://wshdl.load.cdn.zhanqi.tv/zqlive/2869_tUPFz.flv
+V字影院,http://wshdl.load.cdn.zhanqi.tv/zqlive/45338_MRc2N.flv
+澳门莲花,rtmp://3xhtut.live1.z1.pili.qiniucdn.com/lotustv/5562e9e4d409d24c9600075c
+CCTV6电影,http://183.207.249.15/PLTV/3/224/3221225548/index.m3u8
+Newtv动作电影,http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8
+Newtv惊悚悬疑,http://183.207.249.15/PLTV/3/224/3221225561/index.m3u8
+Newtv军旅剧场,http://183.207.249.15/PLTV/3/224/3221225531/index.m3u8
+Newtv海外剧场,http://183.207.249.15/PLTV/3/224/3221225547/index.m3u8
+Newtv动画王国,http://183.207.249.15/PLTV/3/224/3221225555/index.m3u8
+CHC高清電影,http://ivi.bupt.edu.cn/hls/chchd.m3u8
+華視新聞資訊台,http://220.128.208.117/ftvLive/ctsnews/playlist.m3u8
+半島電視台,http://220.128.208.117/ftvLive/aljazeeranews/playlist.m3u8
+豬哥亮歌廳秀,http://220.128.208.117/ftvLive/pigshow/playlist.m3u8
+華研音樂台,http://220.128.208.117/ftvLive/himmusic/playlist.m3u8
+動漫台,http://220.128.208.117/ftvLive/ifun/playlist.m3u8
+哈Hot!電影台,http://220.128.208.117/ftvLive/hamovie/playlist.m3u8
+民視戲劇台,http://220.128.208.117/ftvLive/ftvdrama/playlist.m3u8
+民視綜藝台,http://220.128.208.117/ftvLive/ftvshow/playlist.m3u8
+民視無線台,http://220.128.208.117/ftvLive/ftvwirelesse/playlist.m3u8
+民視新聞台,http://220.128.208.117/ftvLive/ftvnews/playlist.m3u8
+民視台灣台,http://220.128.208.117/ftvLive/fourseason/playlist.m3u8
+CNN頭條新聞台,http://220.128.208.117/ftvLive/cnninews/playlist.m3u8
+CN卡通頻道,http://220.128.208.117/ftvLive/cncorcoon/playlist.m3u8
+台灣交通電視台,http://220.128.208.117/ftvLive/ftvtransportation/playlist.m3u8
+台視財經台,http://220.128.208.117/ftvLive/ttvmoney/playlist.m3u8
+華視無線台,http://220.128.208.117/ftvLive/cts/playlist.m3u8
+中視經典台,http://220.128.208.117/ftvLive/ctvcomprehensive/playlist.m3u8
+中天綜合台,http://220.128.208.117/ftvLive/ctigenner/playlist.m3u8
+中視菁采台,http://220.128.208.117/ftvLive/ctvhd/playlist.m3u8
+中天新聞台,http://220.128.208.117/ftvLive/ctinews/playlist.m3u8
+中視無線台(HD),http://220.128.208.117/ftvLive/ctv/playlist.m3u8
+中視新聞台,http://220.128.208.117/ftvLive/ctvnews/playlist.m3u8
+東森新聞台,http://220.128.208.117/ftvLive/entnews/playlist.m3u8
+東森財經新聞,http://220.128.208.117/ftvLive/ebcnews/playlist.m3u8
+東森亞洲新聞台,http://220.128.208.117/ftvLive/entasinews/playlist.m3u8
+東森亞洲衛視台,http://220.128.208.117/ftvLive/enttv/playlist.m3u8
+三立都會,http://dlhls.cdn.zhanqi.tv/zqlive/121900_BHDgs.m3u8
+亞洲影院,http://61.55.145.199/live/hls/1083.m3u8
+歐美影院,http://61.55.145.199/live/hls/1082.m3u8
+香港影院,http://live.g3proxy.lecloud.com/gslb?stream_id=lb_hkmovie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1
+10801,http://live.g3proxy.lecloud.com/gslb?stream_id=lb_1080P_1080p3m&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1
+10802,http://live.g3proxy.lecloud.com/gslb?stream_id=lb_movie_720p&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1
+好萊屋,http://live.g3proxy.lecloud.com/gslb?stream_id=lb_hlw_1800&tag=live&ext=m3u8&sign=live_tv&platid=10&splatid=1009&format=letv&expect=1
+大陆频道|网路放映厅01 ,http://dlhls.cdn.zhanqi.tv/zqlive/102444_ZGmRp.m3u8
+大陆频道|网路放映厅02 ,http://dlhls.cdn.zhanqi.tv/zqlive/120565_5TBad.m3u8
+大陆频道|网路放映厅03 ,http://dlhls.cdn.zhanqi.tv/zqlive/20910_uUMgC.m3u8
+大陆频道|网路放映厅05 ,http://dlhls.cdn.zhanqi.tv/zqlive/34338_PVMT5.m3u8
+大陆频道|网路放映厅06 ,http://dlhls.cdn.zhanqi.tv/zqlive/40051_ruOu5.m3u8
+大陆频道|网路放映厅07 ,http://dlhls.cdn.zhanqi.tv/zqlive/45188_oT6Ed.m3u8
+大陆频道|网路放映厅08 ,http://dlhls.cdn.zhanqi.tv/zqlive/49858_wgGj1.m3u8
+大陆频道|网路放映厅09 ,http://dlhls.cdn.zhanqi.tv/zqlive/53346_ESoth.m3u8
+大陆频道|网路放映厅10 ,http://dlhls.cdn.zhanqi.tv/zqlive/7032_0s2qn_1024/index.m3u8
+大陆频道|网路放映厅11 ,http://dlhls.cdn.zhanqi.tv/zqlive/88945_Kligp.m3u8
+大陆频道|网路放映厅12 ,http://dlhls.cdn.zhanqi.tv/zqlive/90819_iMmHS.m3u8
+亚洲1 ,http://120.52.73.64/data1.cache.directory/media/videos/iphone/4336.mp4
+亚洲3 ,http://120.52.73.65/data1.cache.directory/media/videos/iphone/3491.mp4
+亚洲6 ,http://120.52.73.65/data3.cache.directory/media/videos/iphone/4024.mp4
