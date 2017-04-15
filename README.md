@@ -9,7 +9,7 @@
 
 1.使用7z命令检验zip文件，所以你要先安装p7zip-full,之所以不用unzip是因为可能会遇到讨厌的`need PK compat. v5.1 (can do v4.6)` 
 
-安装p7zip-full
+ubuntu安装p7zip-full
 
 `sudo apt-get install p7zip-full`
 
@@ -33,3 +33,10 @@
 ## passwddic目录
 这个目录用来存储收集到的用来破解的字典
 #### wifiweak.txt(破解wifi的弱密码字典)
+
+###对于zip等猜测比较简单的密码，推荐使用crunch命令生成字典
+ubuntu安装crunch sudo apt-get install crunch
+
+生成4位纯数字字典 `crunch 4 4 0123456789 -o num4.txt`
+
+生成6位数字加特定字母字典（a,b,c,d,e,f) `crunch 6 6 0123456789abcdef -o numabcdef6.txt`
