@@ -23,7 +23,8 @@ echo 0 > passflag
 split -$3 $2
 
 for dic in `ls | grep "^x[a-z]*"`
-do { 
+do {
+echo "开始扫描字典$dic"
 sh zipcrack $1 $dic 2>/dev/null
 STATUS=$?
 if [ $STATUS -eq 0 ]; then
