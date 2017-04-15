@@ -20,8 +20,8 @@ passfile=$(echo $1)".pass"
 while read pass
 do
 {
-    echo "trying $pass"
-    7z t -p$pass $1 >/dev/null 2>&1 
+    
+    7z t -p$pass $1  >/dev/null 2>&1 
     STATUS=$?
     if [ $STATUS -eq 0 ]; then
         echo "Archive password is: $pass" 
@@ -30,4 +30,5 @@ do
     fi
 }
 done < $2
+echo "字典$2查找完成"
 exit -1
