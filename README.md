@@ -35,6 +35,7 @@ ubuntu安装p7zip-full
 #### wifiweak.txt(破解wifi的弱密码字典)
 
 ###对于zip等猜测比较简单的密码，推荐使用crunch命令生成字典
+
 ubuntu安装crunch sudo apt-get install crunch
 
 生成4位纯数字字典 `crunch 4 4 0123456789 -o num4.txt`
