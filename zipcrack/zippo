@@ -3,27 +3,50 @@ if [ $# != 3 ] ;then
 	echo "输入参数，第一个是zip,第二个是passdic,第三个是分割字典的行数"
 	exit -1;
 fi
+if [ ! -f $1 ]; then
+    echo "没有找到zip文件"
+    exit -1;
+fi
+if [ ! -f $2 ]; then
+    echo "没有找到字典文件"
+    exit -1;
+fi
 
-
-if [ -f "xaa" ]; then
+for predic in `ls | grep "x[a-z]*"`
+do
+if [ -f $predic ]; then
 rm x*
 fi
+done
 
-
+echo 0 > passflag
 split -$3 $2
 
-for dic in `ls x*`
+for dic in `ls | grep "x[a-z]*"`
 do { 
-sh zipcrack $1 $dic;
+sh zipcrack $1 $dic 2>/dev/null
 STATUS=$?
-    if [ $STATUS -ge 0 ]; then
-        echo "passwd is :"$(echo $1)".pass"
-	break
-    fi
-}& 
-done ; wait; echo 'finish';
-echo "passwd is "$(cat $(echo $1)".pass")
-if [ -f "xaa" ]; then
-		rm x*
+if [ $STATUS -eq 0 ]; then
+        echo "passwd funded !"
+        echo "passwd is "$(cat $(echo $1)".pass")
+	echo 1 > passflag
+	exit 0
 fi
+}& 
+done ; 
+wait; 
 
+for dicuesed in `ls | grep "x[a-z]*"`
+do
+if [ -f $dicuesed ]; then
+rm x*
+fi
+done
+flag=$(cat passflag)
+rm passflag
+if [ $flag -eq 1 ]; then
+   exit 0
+else
+echo 'finish pass not find';
+exit -1
+fi
