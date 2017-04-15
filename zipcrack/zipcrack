@@ -1,23 +1,33 @@
 #!/bin/sh
 if [ $# -ne 2 ]
 then
-    echo "Usage $0 <zipfile> <wordlist>";
+    echo "Usage $0 <zip文件> <密码字典>";
     exit -1;
 fi
 
-cat $2 | while read pass
+if [ ! -f $1 ]; then
+    echo "没有找到zip文件"
+    exit -1;
+fi
+
+if [ ! -f $2 ]; then
+    echo "没有找到字典文件"
+    exit -1;
+fi
+
+passfile=$(echo $1)".pass"
+
+while read pass
 do
 {
-    echo -ne "\rtrying \"$pass\" " 
-    yes | 7z t $1 -p$pass  >/dev/null 2>&1 
+    echo "trying $pass"
+    yes | 7z t $1 -p$pass >/dev/null 2>&1 
     STATUS=$?
     if [ $STATUS -eq 0 ]; then
-        echo -e "\nArchive password is: \"$pass\"" 
-        echo $pass>$(echo $1)".pass"
-        break
+        echo "Archive password is: $pass" 
+        echo $pass>$passfile
 	exit 0
     fi
 }
-done
+done < $2
 exit -1
-
