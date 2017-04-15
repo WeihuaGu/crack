@@ -25,11 +25,11 @@
     sh zippo test.zip dic 100000
     
 判断是否破解成功：
+
     zippo如果失败，退出码为-1,并且显示pass not found
     
     zippo如果成功，echo $? 退出码为0,并会把密码写入 zip文件名.pass文件中。例如例子中是test.zip,则成功后密码写入test.zip.pass文件。
-
-
+    
 ## passwddic目录
 这个目录用来存储收集到的用来破解的字典
 #### wifiweak.txt(破解wifi的弱密码字典)
