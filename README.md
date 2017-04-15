@@ -34,7 +34,7 @@ ubuntu安装p7zip-full
 这个目录用来存储收集到的用来破解的字典
 #### wifiweak.txt(破解wifi的弱密码字典)
 
-###对于zip等猜测比较简单的密码，推荐使用crunch命令生成字典
+### 对于zip等猜测比较简单的密码，推荐使用crunch命令生成字典
 
 ubuntu安装crunch sudo apt-get install crunch
 
