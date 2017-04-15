@@ -16,9 +16,11 @@
 
 2.zippo依赖于同目录下的zipcrack。使用zippo必须将zipcrack放在同一目录。zippo可以处理较大的字典，而zipcrack只能跑很小的字典。
 
-用法:sh zippo <zip文件名> <密码字典> <分割密码字典的行数>
-
+用法:
+ 
+    sh zippo <zip文件名> <密码字典> <分割密码字典的行数>`
     sh zipcrack <zip文件名> <小型密码字典（最好不超过1000行)>
+
 例如：
     sh zippo test.zip dic 100000
 
