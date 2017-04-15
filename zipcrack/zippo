@@ -12,17 +12,17 @@ if [ ! -f $2 ]; then
     exit -1;
 fi
 
-for predic in `ls | grep "x[a-z]*"`
+for predic in `ls | grep "^x[a-z]*"`
 do
 if [ -f $predic ]; then
-rm x*
+rm $predic
 fi
 done
 
 echo 0 > passflag
 split -$3 $2
 
-for dic in `ls | grep "x[a-z]*"`
+for dic in `ls | grep "^x[a-z]*"`
 do { 
 sh zipcrack $1 $dic 2>/dev/null
 STATUS=$?
@@ -36,10 +36,10 @@ fi
 done ; 
 wait; 
 
-for dicuesed in `ls | grep "x[a-z]*"`
+for dicuesed in `ls | grep "^x[a-z]*"`
 do
 if [ -f $dicuesed ]; then
-rm x*
+rm $dicuesed
 fi
 done
 flag=$(cat passflag)
