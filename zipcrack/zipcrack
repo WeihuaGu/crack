@@ -20,7 +20,7 @@ passfile=$(echo $1)".pass"
 while read pass
 do
 {
-    
+    echo "testing pass $pass"
     7z t -p$pass $1  >/dev/null 2>&1 
     STATUS=$?
     if [ $STATUS -eq 0 ]; then
