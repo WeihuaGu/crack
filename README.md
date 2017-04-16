@@ -41,3 +41,12 @@ ubuntu安装crunch sudo apt-get install crunch
 生成4位纯数字字典 `crunch 4 4 0123456789 -o num4.txt`
 
 生成6位数字加特定字母字典（a,b,c,d,e,f) `crunch 6 6 0123456789abcdef -o numabcdef6.txt`
+
+
+## TV目录
+filtertvsource 脚本用来过滤ping不通的过期电视源，你可以用目录里自带的节目源.txt文件来做测试，过滤后的文件会放在tvpinged.txt文件中。
+
+用法 `sh filtertvsource 节目源.txt`
+
+
+
