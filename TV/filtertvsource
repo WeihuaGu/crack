@@ -1,4 +1,8 @@
 #!/bin/sh
-
-cat 节目源.txt | while read line ; do tmp=${line#*://}; host=${tmp%%/*}; hostnoport=${host%:*}; ping -c 1 $hostnoport; if [ 0 -eq $? ]; then echo $line >>tvpinged.txt;fi;  done
+if [ $# -ne 1 ]
+then
+    echo "Usage $0 <视频源文件>";
+    exit -1;
+fi
+cat $1 | while read line ; do tmp=${line#*://}; host=${tmp%%/*}; hostnoport=${host%:*}; ping -c 1 $hostnoport; if [ 0 -eq $? ]; then echo $line >>tvpinged.txt;fi;  done
 
