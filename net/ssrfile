@@ -1,0 +1,13 @@
+#! /usr/bin/sh
+ssrlist=$(cat $1 | grep ssr )
+c=0
+for ssrurl in $ssrlist
+do
+	ssr add $ssrurl
+done
+
+echo '请选择地区进行测试'
+ssr delay
+
+
+
